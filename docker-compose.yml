@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  php:
+    build: .
+    volumes:
+      - /Users/gorogoroyasu/dockerWorld/php-ffi:/php-ffi
+    command: tail -f /dev/null
+    ports: 
+      - 8010:8010
